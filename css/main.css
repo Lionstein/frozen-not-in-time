@@ -4,10 +4,19 @@ html {
 
 h1 {
   color: #990073;
+  position: absolute;
+  max-width: 19em;
+  transform-origin: left center;
+  transform: rotate(-10deg);
 }
 
 h2 {
   color: #c09;
+  position: absolute;
+  max-width: 19em;
+  transform-origin: left center;
+  transform: rotate(-5deg);
+
 }
 
 .btn-ghost {
@@ -21,4 +30,186 @@ h2 {
   color: #c09;
   border-color: #990073;
   background-color: rgba(153, 0, 115, .2);
+}
+
+.head {
+  filter: blur(16px) opacity(0);
+  animation: head .3s 1.2s linear forwards;
+  transform: translate(2.25em, -4.75em);
+}
+
+.body {
+  filter: blur(16px) opacity(0);
+  animation: body .3s 1.2s linear forwards;
+  transform: translate(2.6em, 0);
+}
+
+.enjoy {
+  filter: blur(16px) opacity(0);
+  animation: enjoy .3s 1.2s linear forwards;
+  transform: translate(-6em, 5.8em);
+}
+
+.card {
+  border-top: solid 8px #b3fbff;
+  border-bottom: solid 8px #b3fbff;
+  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%, #d4fdff 1%, #d4fdff 2%, #c9fcff 2.1%);
+}
+
+.cherry {
+  position: absolute;
+  z-index: 5;
+  animation: cherry .3s 1.5s ease-in forwards;
+}
+
+.vanilla {
+  position: absolute;
+  z-index: 5;
+  animation: vanilla .3s .9s ease-in forwards;
+}
+
+.chocolate {
+  position: absolute;
+  z-index: 5;
+  animation: choco .3s .6s ease-in forwards;
+}
+
+.mint {
+  position: absolute;
+  z-index: 5;
+  animation: mint .3s .3s ease-in forwards;
+}
+
+.cone {
+  position: absolute;
+  z-index: 10;
+  animation: cone .3s ease-in forwards;
+}
+
+.scoop {
+  bottom: 100%;
+  left: 63%;
+  height: 180px;
+  width: 180px;
+
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 20em) {
+
+  .ice-cream {
+    position: relative;
+    height: 25em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .ice-cream {
+  position: relative;
+  height: 23.1em;
+  }
+
+}
+
+@keyframes head {
+
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: blur(0);
+    filter: opacity(1);
+  }
+
+}
+
+@keyframes body {
+
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: blur(0);
+    filter: opacity(1);
+  }
+
+}
+
+@keyframes enjoy {
+
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: blur(0);
+    filter: opacity(1);
+  }
+
+}
+
+@keyframes cherry {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 344px;
+  }
+
+}
+
+@keyframes vanilla {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 264px;
+  }
+
+}
+
+@keyframes choco {
+
+  0% {
+    bottom: 100%;
+    left: 65%;
+  }
+
+  100% {
+    bottom: 184px;
+    left: 65%;
+  }
+
+}
+
+@keyframes mint {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 104px;
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+
 }
