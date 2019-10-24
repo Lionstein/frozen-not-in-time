@@ -16,7 +16,6 @@ h2 {
   max-width: 19em;
   transform-origin: left center;
   transform: rotate(-5deg);
-
 }
 
 .btn-ghost {
@@ -107,8 +106,8 @@ h2 {
 @media only screen and (min-width: 90em) {
 
   .ice-cream {
-  position: relative;
-  height: 23.1em;
+    position: relative;
+    height: 23.1em;
   }
 
 }
